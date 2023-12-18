@@ -1,0 +1,18 @@
+2023-12-11 14:07:14 INFO ====== WebDriver manager ======
+2023-12-11 14:07:17 INFO Get LATEST chromedriver version for google-chrome
+2023-12-11 14:07:17 INFO Get LATEST chromedriver version for google-chrome
+2023-12-11 14:07:18 INFO Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-11 14:07:19 INFO Test login_positive Starting
+2023-12-11 14:07:20 INFO Send 'AlenaK' to element //*[@id="login"]/div[1]/label/input
+2023-12-11 14:07:20 INFO Send 'd02d48181c' to element //*[@id="login"]/div[2]/label/input
+2023-12-11 14:07:20 INFO Click login button
+2023-12-11 14:07:20 INFO Start find success text
+2023-12-11 14:07:22 INFO We find text 'Hello, AlenaK' in login field //*[@id="app"]/main/nav/ul/li[3]/a
+2023-12-11 14:07:22 INFO Test add_post Starting
+2023-12-11 14:07:22 INFO Click contact button
+2023-12-11 14:07:23 INFO Send 'Mike' to element //*[@id="contact"]/div[1]/label/input
+2023-12-11 14:07:23 INFO Send 'mike63@mail.ru' to element //*[@id = "contact"]/div[2]/label/input
+2023-12-11 14:07:23 INFO Send 'New post creation during HW 3 task implemented' to element //*[@id = "contact"]/div[3]/label/span/textarea
+2023-12-11 14:07:23 INFO Click contact us button
+2023-12-11 14:07:24 INFO Get alert message
+2023-12-11 14:07:24 INFO Alert message is Form successfully submitted

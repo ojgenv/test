@@ -1,0 +1,148 @@
+2023-12-17 13:22:59 INFO ====== WebDriver manager ======
+2023-12-17 13:23:01 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 13:23:01 DEBUG Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2023-12-17 13:23:02 DEBUG https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 3106
+2023-12-17 13:23:02 INFO Get LATEST chromedriver version for google-chrome
+2023-12-17 13:23:02 DEBUG Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2023-12-17 13:23:02 DEBUG https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 3106
+2023-12-17 13:23:02 INFO Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-17 13:23:02 DEBUG Started executable: `C:\Users\user\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe` in a child process with pid: 3352
+2023-12-17 13:23:02 DEBUG POST http://localhost:62633/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-12-17 13:23:02 DEBUG Starting new HTTP connection (1): localhost:62633
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.200","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"C:\\Users\\user\\AppData\\Local\\Temp\\scoped_dir3352_1710011713"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62636"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"63d37c2d132e59a3306c327b6c379420"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 INFO Test login_positive Starting
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/url {"url": "https://test-stand.gb.ru"}
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/url HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 INFO Send 'AlenaK' to element //*[@id="login"]/div[1]/label/input
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[1]/label/input"}
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"09740A70350BF348AEFD5BEE5FA3EEB0_element_1"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_1/clear {}
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_1/clear HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_1/value {"text": "AlenaK", "value": ["A", "l", "e", "n", "a", "K"]}
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_1/value HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 INFO Send 'd02d48181c' to element //*[@id="login"]/div[2]/label/input
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"login\"]/div[2]/label/input"}
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"09740A70350BF348AEFD5BEE5FA3EEB0_element_2"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_2/clear {}
+2023-12-17 13:23:07 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_2/clear HTTP/1.1" 200 0
+2023-12-17 13:23:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:07 DEBUG Finished Request
+2023-12-17 13:23:07 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_2/value {"text": "d02d48181c", "value": ["d", "0", "2", "d", "4", "8", "1", "8", "1", "c"]}
+2023-12-17 13:23:08 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_2/value HTTP/1.1" 200 0
+2023-12-17 13:23:08 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:08 DEBUG Finished Request
+2023-12-17 13:23:08 INFO Click login button
+2023-12-17 13:23:08 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "css selector", "value": "button"}
+2023-12-17 13:23:08 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:08 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"09740A70350BF348AEFD5BEE5FA3EEB0_element_8"}} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:08 DEBUG Finished Request
+2023-12-17 13:23:08 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_8/click {}
+2023-12-17 13:23:08 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/09740A70350BF348AEFD5BEE5FA3EEB0_element_8/click HTTP/1.1" 200 0
+2023-12-17 13:23:08 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:08 DEBUG Finished Request
+2023-12-17 13:23:08 INFO Start find success text
+2023-12-17 13:23:08 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[3]/a"}
+2023-12-17 13:23:08 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 404 0
+2023-12-17 13:23:08 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/nav/ul/li[3]/a\"}\n  (Session info: chrome=119.0.6045.200)","stacktrace":"\tGetHandleVerifier [0x003472A3+45731]\n\t(No symbol) [0x002D2D51]\n\t(No symbol) [0x001C880D]\n\t(No symbol) [0x001FB940]\n\t(No symbol) [0x001FBE0B]\n\t(No symbol) [0x0022D1F2]\n\t(No symbol) [0x00218024]\n\t(No symbol) [0x0022B7A2]\n\t(No symbol) [0x00217DD6]\n\t(No symbol) [0x001F31F6]\n\t(No symbol) [0x001F439D]\n\tGetHandleVerifier [0x00650716+3229462]\n\tGetHandleVerifier [0x006984C8+3523784]\n\tGetHandleVerifier [0x0069214C+3498316]\n\tGetHandleVerifier [0x003D1680+611968]\n\t(No symbol) [0x002DCCCC]\n\t(No symbol) [0x002D8DF8]\n\t(No symbol) [0x002D8F1D]\n\t(No symbol) [0x002CB2C7]\n\tBaseThreadInitThunk [0x753F05C9+25]\n\tRtlGetAppContainerNamedObjectPath [0x77A278BD+237]\n\tRtlGetAppContainerNamedObjectPath [0x77A2788D+189]\n"}} | headers=HTTPHeaderDict({'Content-Length': '972', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:08 DEBUG Finished Request
+2023-12-17 13:23:08 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[3]/a"}
+2023-12-17 13:23:08 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 404 0
+2023-12-17 13:23:08 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/main/nav/ul/li[3]/a\"}\n  (Session info: chrome=119.0.6045.200)","stacktrace":"\tGetHandleVerifier [0x003472A3+45731]\n\t(No symbol) [0x002D2D51]\n\t(No symbol) [0x001C880D]\n\t(No symbol) [0x001FB940]\n\t(No symbol) [0x001FBE0B]\n\t(No symbol) [0x0022D1F2]\n\t(No symbol) [0x00218024]\n\t(No symbol) [0x0022B7A2]\n\t(No symbol) [0x00217DD6]\n\t(No symbol) [0x001F31F6]\n\t(No symbol) [0x001F439D]\n\tGetHandleVerifier [0x00650716+3229462]\n\tGetHandleVerifier [0x006984C8+3523784]\n\tGetHandleVerifier [0x0069214C+3498316]\n\tGetHandleVerifier [0x003D1680+611968]\n\t(No symbol) [0x002DCCCC]\n\t(No symbol) [0x002D8DF8]\n\t(No symbol) [0x002D8F1D]\n\t(No symbol) [0x002CB2C7]\n\tBaseThreadInitThunk [0x753F05C9+25]\n\tRtlGetAppContainerNamedObjectPath [0x77A278BD+237]\n\tRtlGetAppContainerNamedObjectPath [0x77A2788D+189]\n"}} | headers=HTTPHeaderDict({'Content-Length': '972', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:08 DEBUG Finished Request
+2023-12-17 13:23:09 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[3]/a"}
+2023-12-17 13:23:09 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:09 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_33"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:09 DEBUG Finished Request
+2023-12-17 13:23:09 DEBUG GET http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_33/text {}
+2023-12-17 13:23:09 DEBUG http://localhost:62633 "GET /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_33/text HTTP/1.1" 200 0
+2023-12-17 13:23:09 DEBUG Remote response: status=200 | data={"value":"Hello, AlenaK"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:09 DEBUG Finished Request
+2023-12-17 13:23:09 INFO We find text 'Hello, AlenaK' in login field //*[@id="app"]/main/nav/ul/li[3]/a
+2023-12-17 13:23:09 INFO Test add_post Starting
+2023-12-17 13:23:09 INFO Click contact button
+2023-12-17 13:23:09 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"app\"]/main/nav/ul/li[2]/a"}
+2023-12-17 13:23:09 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:09 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_35"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:09 DEBUG Finished Request
+2023-12-17 13:23:09 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_35/click {}
+2023-12-17 13:23:09 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_35/click HTTP/1.1" 200 0
+2023-12-17 13:23:09 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:09 DEBUG Finished Request
+2023-12-17 13:23:10 INFO Send 'Mike' to element //*[@id="contact"]/div[1]/label/input
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"contact\"]/div[1]/label/input"}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_37"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_37/clear {}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_37/clear HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_37/value {"text": "Mike", "value": ["M", "i", "k", "e"]}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_37/value HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 INFO Send 'mike63@mail.ru' to element //*[@id = "contact"]/div[2]/label/input
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id = \"contact\"]/div[2]/label/input"}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_38"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_38/clear {}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_38/clear HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_38/value {"text": "mike63@mail.ru", "value": ["m", "i", "k", "e", "6", "3", "@", "m", "a", "i", "l", ".", "r", "u"]}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_38/value HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 INFO Send 'New post created during HW 3 task implemented' to element //*[@id = "contact"]/div[3]/label/span/textarea
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id = \"contact\"]/div[3]/label/span/textarea"}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_39"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_39/clear {}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_39/clear HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_39/value {"text": "New post created during HW 3 task implemented", "value": ["N", "e", "w", " ", "p", "o", "s", "t", " ", "c", "r", "e", "a", "t", "e", "d", " ", "d", "u", "r", "i", "n", "g", " ", "H", "W", " ", "3", " ", "t", "a", "s", "k", " ", "i", "m", "p", "l", "e", "m", "e", "n", "t", "e", "d"]}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_39/value HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 INFO Click contact us button
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element {"using": "xpath", "value": "//*[@id=\"contact\"]/div[4]/button/span"}
+2023-12-17 13:23:10 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element HTTP/1.1" 200 0
+2023-12-17 13:23:10 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_47"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:10 DEBUG Finished Request
+2023-12-17 13:23:10 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_47/click {}
+2023-12-17 13:23:11 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/element/E8ABEA7FDBCDA37CDC08D7762BD60FF5_element_47/click HTTP/1.1" 200 0
+2023-12-17 13:23:11 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:11 DEBUG Finished Request
+2023-12-17 13:23:12 INFO Get alert message
+2023-12-17 13:23:12 DEBUG GET http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/alert/text {}
+2023-12-17 13:23:12 DEBUG http://localhost:62633 "GET /session/63d37c2d132e59a3306c327b6c379420/alert/text HTTP/1.1" 200 0
+2023-12-17 13:23:12 DEBUG Remote response: status=200 | data={"value":"Form successfully submitted"} | headers=HTTPHeaderDict({'Content-Length': '39', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:12 DEBUG Finished Request
+2023-12-17 13:23:12 DEBUG GET http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/alert/text {}
+2023-12-17 13:23:12 DEBUG http://localhost:62633 "GET /session/63d37c2d132e59a3306c327b6c379420/alert/text HTTP/1.1" 200 0
+2023-12-17 13:23:12 DEBUG Remote response: status=200 | data={"value":"Form successfully submitted"} | headers=HTTPHeaderDict({'Content-Length': '39', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:12 DEBUG Finished Request
+2023-12-17 13:23:12 DEBUG POST http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420/alert/accept {}
+2023-12-17 13:23:12 DEBUG http://localhost:62633 "POST /session/63d37c2d132e59a3306c327b6c379420/alert/accept HTTP/1.1" 200 0
+2023-12-17 13:23:12 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:12 DEBUG Finished Request
+2023-12-17 13:23:12 INFO Alert message is Form successfully submitted
+2023-12-17 13:23:12 DEBUG DELETE http://localhost:62633/session/63d37c2d132e59a3306c327b6c379420 {}
+2023-12-17 13:23:12 DEBUG http://localhost:62633 "DELETE /session/63d37c2d132e59a3306c327b6c379420 HTTP/1.1" 200 0
+2023-12-17 13:23:12 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-12-17 13:23:12 DEBUG Finished Request

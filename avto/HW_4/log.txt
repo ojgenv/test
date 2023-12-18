@@ -1,0 +1,15 @@
+2023-12-18 15:43:52 INFO ====== WebDriver manager ======
+2023-12-18 15:44:02 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 15:44:02 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 15:44:02 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 15:44:02 INFO WebDriver version 120.0.6099.71 selected
+2023-12-18 15:44:02 INFO Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/win32/chromedriver-win32.zip
+2023-12-18 15:44:02 INFO About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/win32/chromedriver-win32.zip
+2023-12-18 15:44:03 INFO Driver downloading response is 200
+2023-12-18 15:44:04 INFO Get LATEST chromedriver version for google-chrome
+2023-12-18 15:44:05 INFO Driver has been saved in cache [C:\Users\user\.wdm\drivers\chromedriver\win64\120.0.6099.71]
+2023-12-18 15:44:12 INFO Test login_negative Starting
+2023-12-18 15:44:15 INFO Test login_positive Starting
+2023-12-18 15:44:16 INFO Test add_post Starting
+2023-12-18 15:44:19 INFO Test contact_us Starting
+2023-12-18 15:44:23 INFO Get alert message
